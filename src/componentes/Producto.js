@@ -55,13 +55,14 @@ function Producto() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="Nombre del calzado"
+        subheader="September 14, 2022"
       />
       <CardMedia
         className={classes.media}
-        image=''
-        title="Paella dish"
+        image="https://stockx-360.imgix.net/Nike-LD-Waffle-Sacai-Black-Nylon/Images/Nike-LD-Waffle-Sacai-Black-Nylon/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1606321430&w=1000"
+        alt="Nike LD Wafle Sacai Black"
+        title="zapa pa correr"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
@@ -94,7 +95,7 @@ function Producto() {
           
 
           <Typography>
-            Set aside off of the heat to let rest for 10 minutes, and then serve.
+            Caracteristicas del producto
           </Typography>
         </CardContent>
       </Collapse>

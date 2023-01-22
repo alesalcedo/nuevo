@@ -1,28 +1,52 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+// import Typography from '@material-ui/core/Typography';
+// import Link from '@material-ui/core/Link';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(2),
+    background: theme.palette.secondary.dark,
+    color: theme.palette.primary.contrastText,
+    padding: theme.spacing(3, 0),
+  },
+  container: {
+    maxWidth: '1170px',
+    margin: '0 auto',
   },
   column: {
-    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: theme.spacing(3),
+  },
+  iconContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    margin: theme.spacing(3, 0),
   },
   icon: {
+    color: theme.palette.primary.contrastText,
     fontSize: '2rem',
-    marginRight: theme.spacing(2),
+    margin: theme.spacing(0, 1),
+    '&:hover': {
+      color: theme.palette.primary.light,
+    },
+  },
+  [theme.breakpoints.down('sm')]: {
+    column: {
+      flex: 1,
+    },
   },
 }));
 
-function Footer() {
+const Footer = () => {
   const classes = useStyles();
 
+  
   return (
     <footer className={classes.root}>
       <Grid container spacing={3}>
